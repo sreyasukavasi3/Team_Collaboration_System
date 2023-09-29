@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Zeus</title>
+    {% load static %}
+
+  <!--google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'tcs/css/home.css' %}">
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/de78bb5c93.js" crossorigin="anonymous"></script>
+  
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href=""><h2>Zeus</h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register">Signup</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+  <section id="title">
+  
+    <div class="container-fluid">
+
+
+    
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-6"> 
+        <h1>A complete Solution for the tech</h1>
+        <button type="button" onclick="window.location.href = 'register';" class="btn btn-dark btn-lg db"><i class="fas fa-angle-up"></i> SignUp</button>
+        <button type="button" onclick="window.location.href = 'login';"class="btn btn-outline-light btn-lg db"><i class="fas fa-angle-down"></i> Signin</button>
+      </div>
+      
+      <div  class="col-lg-6 ">
+         <img class="title-image" src="{% static 'tcs/images/img-5.png' %}" alt="iphone-mockup">
+      </div>
+    </div>
+  
+  </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row"> 
+      <div class="feature-box col-lg-3">
+        <i class="icon fas fa-users fa-4x"></i>
+        <h3>Teams</h3>
+        <p>So easy to use, even your dog could do it.</p>  
+      </div>
+      
+      <div class="feature-box col-lg-3">
+        <i class="icon fas fa-cloud-upload-alt fa-4x "></i>
+        <h3>Upload Code</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+  
+      <div class="feature-box col-lg-3">
+        <i class="icon fas fa-briefcase fa-4x"></i>
+        <h3>Collaborate</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+
+      <div class="feature-box col-lg-3">
+        <i class="icon fas fa-comments fa-4x "></i>
+        <h3>Chat</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      
+    </div>
+    
+    
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="
+          testimonial-text">Technology is best when it brings people together                 </h2>
+          <img class="testimonial-image" src="{% static 'tcs/images/mat.jpeg' %}" alt="dog-profile">
+          <em>Matt Mullenweg</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road.</h2>
+          <img class="testimonial-image" src="{% static 'tcs/images/quote.jpg' %}" alt="Stewart brand">
+          <em>Stewart Brand</em>      
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </a>
+    </div>
+
+    
+
+  
+  </section>
+
+
+  
+  <!-- Pricing -->
+
+  <section id="team">
+      <h2 class="textnew">Our Team</h2>
+      <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="imground" src="{% static 'tcs/images/vaishak.jpg' %}" style="width: 150px;height:auto;padding-top: 10px;">
+                <h1 class="adjusth1">Vaisakh kv</h1>
+                <p class="titlepara">CEO of Zeus</p>
+                <p>Back end developer at Zeus</p>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img class="imground" src="{% static 'tcs/images/sreya.jpg' %}" style="width: 150px;height:auto;padding-top: 10px;">
+                <h1 class="adjusth1">Sreya S</h1>
+                <p class="titlepara">Back end Developer</p>
+                <p>Bank end developer at Zeus</p>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img class="imground" src="{% static 'tcs/images/raj.jpg' %}" style="width: 150px;height:auto;padding-top: 10px;">
+                <h1 class="adjusth1">Varun Raj</h1>
+                <p class="titlepara">Front end Developer </p>
+                <p>Front end developer at Zeus</p>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img class="imground" src="{% static 'tcs/images/anandu.jpg' %}" style="width: 150px;height:auto;padding-top: 10px;">
+                <h1 class="adjusth1">Anandu</h1>
+                <p class="titlepara">Front end Developer </p>
+                <p>Front end developer at Zeus</p>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img class="imground" src="{% static 'tcs/images/shankar.jpg' %}" style="width: 150px;height:auto;padding-top: 10px;">
+                <h1 class="adjusth1">Vinay</h1>
+                <p class="titlepara">Front end Developer </p>
+                <p>Front end developer at Zeus</p>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+    </div>
+      
+        
+      </div>
+    </div>
+     
+    
+
+  </section> 
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Looking ZEUS for project collaboration?</h3>
+    <h4 class="cta-sub">Create collaborative projects, connect in professional communities, and communicate with members and staff all in one place in Zeus office</h4>
+ 
+
+  </section>
+
+  <!-- Get in touch -->
+  <section id="contact"> 
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email id">
+            </div>
+            <div class="form-group">
+              <textarea  class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            
+          </form>
+        </div>
+        <div class="col-md-6 contact-info">
+          <img class="touch" src="{% static 'tcs/images/touch1.png' %}" alt="24x7">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fab fa-facebook-f icone-1"></i>
+    <i class="fab fa-instagram icone-1"></i>
+    <i class="far fa-envelope"></i>
+    <p>© Copyright 2020 Zeus Technology limited</p>
+
+  </footer>
+
+  
+</body>
+
+
+</body>
+
+</html>

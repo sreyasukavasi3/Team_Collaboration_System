@@ -1,0 +1,312 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"intensity"
+			],
+			[
+				"req",
+				"reqCnts"
+			],
+			[
+				"img",
+				"imgtrn"
+			],
+			[
+				"rotaion",
+				"rotation"
+			],
+			[
+				"convert",
+				"convertToString"
+			],
+			[
+				"conve",
+				"convertToFloat"
+			],
+			[
+				"su",
+				"sumOfDigit"
+			],
+			[
+				"sort",
+				"sort_list"
+			],
+			[
+				"p",
+				"projVal"
+			],
+			[
+				"t",
+				"travel"
+			],
+			[
+				"fr",
+				"fromY"
+			],
+			[
+				"cur",
+				"curPos"
+			],
+			[
+				"pr",
+				"preVal"
+			],
+			[
+				"alic",
+				"aliceScore"
+			],
+			[
+				"ali",
+				"aliceScore"
+			],
+			[
+				"bob",
+				"bobScore"
+			],
+			[
+				"alice",
+				"aliceItr"
+			],
+			[
+				"aliceInd",
+				"aliceIndItr"
+			],
+			[
+				"b",
+				"beginend\t$1.begin(), $1.end()"
+			],
+			[
+				"m",
+				"models"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/vaisakh/Desktop/basic/tcs/manage.py",
+		"/home/vaisakh/Desktop/softwareEngineering/tcs/ZEUS/settings.py",
+		"/home/vaisakh/Desktop/softwareEngineering/tcs/ZEUS/registration/login.html",
+		"/home/vaisakh/Desktop/softwareEngineering/tcs/ZEUS/urls.py",
+		"/home/vaisakh/Desktop/softwareEngineering/tcs/manage.py",
+		"/home/vaisakh/Desktop/softwareEngineering/ZEUS/manage.py",
+		"/home/vaisakh/Desktop/softwareEngineering/ZEUS/ZEUS/urls.py",
+		"/home/vaisakh/Desktop/softwareEngineering/ZEUS/ZEUS/wsgi.py",
+		"/home/vaisakh/Desktop/assignment2/5.py",
+		"/home/vaisakh/Desktop/compiler/input.txt",
+		"/home/vaisakh/Desktop/compiler/q1",
+		"/home/vaisakh/Desktop/lab5/5.py",
+		"/home/vaisakh/Desktop/rover/pathfindingAlgos/a*.cpp",
+		"/home/vaisakh/Desktop/lab4/4/question4.py",
+		"/home/vaisakh/Desktop/lab4/1/assignment1.py",
+		"/home/vaisakh/Desktop/server.py",
+		"/home/vaisakh/Desktop/map.cpp",
+		"/home/vaisakh/Desktop/rover/client.py",
+		"/home/vaisakh/Desktop/lab4/4/question3.py",
+		"/home/vaisakh/Desktop/lab4/3/question3.py",
+		"/home/vaisakh/Desktop/lab4/2/question2.py",
+		"/home/vaisakh/Desktop/lab4/2/assignment1.py",
+		"/home/vaisakh/Desktop/lab4/assignment1.py",
+		"/home/vaisakh/Desktop/lab4/vaisakhkv(am.en.u4cse17342).py",
+		"/home/vaisakh/Desktop/lab4/three.py",
+		"/home/vaisakh/Desktop/lab4/four.py",
+		"/media/vaisakh/collection/codes/coding/python/openLab/lab3/three.py",
+		"/home/vaisakh/Documents/lab3/three.py",
+		"/media/vaisakh/collection/codes/coding/python/openLab/one.py",
+		"/home/vaisakh/Desktop/one.py",
+		"/home/vaisakh/Desktop/part1_am.en.u4cse17342_vaisakh.k.v.py",
+		"/home/vaisakh/Desktop/part2_am.en.u4cse17342_vaisakh.k.v.py",
+		"/home/vaisakh/Desktop/part3_am.en.u4cse17342_vaisakh.k.v.py",
+		"/home/vaisakh/Desktop/part2.py",
+		"/home/vaisakh/Desktop/part1.py",
+		"/home/vaisakh/Desktop/part3.py",
+		"/home/vaisakh/Desktop/rover/pathfindingAlgos/d*lite.cpp",
+		"/home/vaisakh/Desktop/rover/pathfindingAlgos/a*lite.cpp",
+		"/home/vaisakh/Desktop/19-10-long/SmallestBeautifulNumber.cpp",
+		"/home/vaisakh/Desktop/19-10-long/FromZerotoInfinity.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/FromZerotoInfinity.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/PhysicalExercise.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/ChefAndMinimumColouring.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/WeaponValue.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/HardSequence.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-long/ASimpleGame.cpp",
+		"/media/vaisakh/collection/codes/coding/c++/codecheff/19-10-icpc/1.cpp",
+		"/home/vaisakh/Desktop/test/main/__init__.py",
+		"/home/vaisakh/Desktop/test/main/models.py",
+		"/home/vaisakh/Desktop/test/main/routes.py",
+		"/home/vaisakh/Desktop/test/main/templates/login.html",
+		"/home/vaisakh/Desktop/test/main/templates/base.html",
+		"/home/vaisakh/Desktop/test/main/templates/index.html",
+		"/home/vaisakh/Desktop/test/main/permissions.py",
+		"/home/vaisakh/Desktop/test/main/templates/register.html",
+		"/home/vaisakh/Desktop/test/main/forms.py",
+		"/home/vaisakh/.config/sublime-text-3/Packages/User/cpp14.sublime-build",
+		"/media/vaisakh/collection/codes/coding/c++/template/main.cpp",
+		"/home/vaisakh/.config/sublime-text-3/Packages/User/cpp14.sublime-snippet",
+		"/media/vaisakh/collection/codes/coding/c++/codeforces/18-3#470/Protect Sheep.cpp",
+		"/home/vaisakh/Desktop/test/main/form.py",
+		"/home/vaisakh/Desktop/test/config.py",
+		"/home/vaisakh/Desktop/airportManagement/django/django/views/csrf.py",
+		"/home/vaisakh/Desktop/test/test.py",
+		"/home/vaisakh/Desktop/airportManagement/django/django/forms/models.py",
+		"/home/vaisakh/Desktop/test/migrations/versions/86e81e15e6f3_added_users_table.py",
+		"/home/vaisakh/Desktop/test/main/config.py",
+		"/home/vaisakh/Downloads/client.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/cpp14.sublime-build",
+	"project": "urls.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

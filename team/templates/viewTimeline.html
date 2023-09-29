@@ -1,0 +1,55 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+<h2>Ungraded Tasks</h2>
+<table class="table table-hover">
+	    <tr>
+	        <th>Deadline</th>
+	        <th>Task</th>
+	        <th>Task Details</th>
+	        <th>Upload</th>
+	        <th>View</th>
+	        <th>Grade</th>
+	    </tr>-
+	{% for task in ungradedTasks %}
+		<tr>
+	        <td>{{ task.deadline }}</td>
+	        <td>{{ task.task }}</td>
+	        <td>{{ task.taskDetails }}</td>
+	        <td><a class="btn btn-default" href="{% url 'upload' team=task.teamName task=task.task %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'view' team=task.teamName task=task.task %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'grade' team=task.teamName task=task.task %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	    </tr>
+
+	{% endfor %}
+</table>
+
+<h2>Graded Tasks</h2>
+<table class="table table-hover">
+	    <tr>
+	        <th>Deadline</th>
+	        <th>Task</th>
+	        <th>Task Details</th>
+	        <th>Upload</th>
+	        <th>View</th>
+	        <th>Grade</th>
+	    </tr>-
+	{% for task in gradedTasks %}
+		<tr>
+	        <td>{{ task.deadline }}</td>
+	        <td>{{ task.task }}</td>
+	        <td>{{ task.taskDetails }}</td>
+	        <td><a class="btn btn-default" href="{% url 'upload' team=task.teamName task=task.task %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'view' team=task.teamName task=task.task %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td>{{ task.grade }}</td>
+	    </tr>
+
+	{% endfor %}
+</table>
+
+</body>
+</html>

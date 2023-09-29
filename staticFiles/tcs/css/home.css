@@ -1,0 +1,256 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+p {
+    color: grey;
+}
+
+.texth2{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid{
+    padding: 3% 5% 7%;
+}
+
+#title{
+    background-color: black;
+    color: white;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    padding: 1 0 0rem;
+    background-color: black;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 20;
+}
+/* Download button */
+
+.db{
+    margin: 5% 3% 5% 0;
+}
+
+/* Title */
+
+.title-image{  
+    position: absolute;
+    right: 30%;
+}
+
+#features{
+    padding: 7% 15%;
+    background-color: white ;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icon{
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.icon:hover{
+    color: #16817a;
+}
+
+/* Slide bar */
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+
+
+
+@media (max-width: 1028px){
+
+        #title{
+            text-align: center;
+        }
+
+        .title-image{
+            position: static;
+            transform: rotate(0);
+        
+        }
+}
+
+#cta{
+    background-color: black;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    line-height: 1.5 ;
+    padding-bottom: 2rem;
+   
+}
+
+.cta-sub{
+    word-spacing: 3px;
+}
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.icone-1{
+    margin: 20px 10px;
+}
+
+.img-box img{
+    height: 250px;
+}
+
+.profile-pic{
+    margin-top: 25px;
+}
+
+.profile-pic .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* this is for our team */
+
+.column{
+    align-items: center;
+    align-content: center;
+    width: 20%;
+    float: left;
+    padding: 0px 10px;
+    padding-bottom: 8%;
+    padding-top: 3%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imground{
+    margin-left: 3.5rem;
+    border-radius: 50%;
+}
+
+@media screen and(max-width:600px){
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    padding-bottom: 15px;
+}
+
+.textnew{
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 3%;
+}
+
+.adjusth1{
+    font-size: 40px;
+}
+
+/* get in touch */
+
+#contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.contact-form{
+    padding: 15px;
+}
+
+.btn-primary{
+    background-color: black;
+}
+
+.follow{
+    padding: 10px;
+    margin: 15px;
+}
+
+.touch{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,118 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+{% load crispy_forms_tags %}
+
+<h1>Pending to Accept or Reject</h1>
+	<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Time Uploaded</th>
+	        <th>uploaded By</th>
+	        <th>Download</th>
+	        <th>Suggest</th>
+	        <th>View Suggestions</th>
+	        <th>Approve</th>
+	        <th>View Approvals</th>
+	        <th>Aproved</th>
+	    </tr>
+
+		{% for file in pendingFiles %}
+		<tr>
+	        <td>{{ file.name }}</td>
+	        <td>{{ file.uploaded_at }}</td>
+	        <td>{{ file.uploadedBy }}</td>
+	        <td><a class="btn btn-default" href="{{root}}{{file}}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+
+	        <td><a class="btn btn-default" href="{% url 'suggest' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewSuggestions' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'approve' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewApprove' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td>{{ file.approved }}</td>
+	    </tr>
+		{% endfor %}
+	</table>
+
+<h1>Accepted</h1>
+	<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Time Uploaded</th>
+	        <th>uploaded By</th>
+	        <th>Download</th>
+	        <th>Suggest</th>
+	        <th>View Suggestions</th>
+	        <th>Approve</th>
+	        <th>View Approvals</th>
+	        <th>Aproved</th>
+	    </tr>
+
+		{% for file in acceptedFiles %}
+		<tr>
+	        <td>{{ file.name }}</td>
+	        <td>{{ file.uploaded_at }}</td>
+	        <td>{{ file.uploadedBy }}</td>
+	        <td><a class="btn btn-default" href="{{root}}{{file}}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+
+	        <td><a class="btn btn-default" href="{% url 'suggest' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewSuggestions' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'approve' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewApprove' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td>{{ file.approved }}</td>
+	    </tr>
+		{% endfor %}
+	</table>
+
+
+<h1>Rejected</h1>
+	<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Time Uploaded</th>
+	        <th>uploaded By</th>
+	        <th>Download</th>
+	        <th>Suggest</th>
+	        <th>View Suggestions</th>
+	        <th>Approve</th>
+	        <th>View Approvals</th>
+	        <th>Aproved</th>
+	    </tr>
+
+		{% for file in rejectedFiles %}
+		<tr>
+	        <td>{{ file.name }}</td>
+	        <td>{{ file.uploaded_at }}</td>
+	        <td>{{ file.uploadedBy }}</td>
+	        <td><a class="btn btn-default" href="{{root}}{{file}}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+
+	        <td><a class="btn btn-default" href="{% url 'suggest' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewSuggestions' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'approve' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewApprove' team=file.teamName task=file.task.task filename=file.name uploadedBy=file.uploadedBy%}"><span class="lyphicon glyphicon-plus"></span></a></td>
+
+	        <td>{{ file.approved }}</td>
+	    </tr>
+		{% endfor %}
+	</table>
+
+
+</body>
+</html>

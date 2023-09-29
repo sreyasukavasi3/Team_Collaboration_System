@@ -1,0 +1,27 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+{% load crispy_forms_tags %}
+<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Suggested By</th>  
+	        <th>Suggested At</th>  
+	        <th>Suggestion</th>
+	    </tr>
+	
+		{% for suggestion in suggestions %}
+		<tr> 
+	        <td>{{ suggestion.file.name }}</td>
+	        <td>{{ suggestion.suggestedBy }}</td>
+	        <td>{{ suggestion.suggestedAt }}</td>
+	        <td>{{ suggestion.suggestion }}</td>
+	    </tr>
+
+	{% endfor %}  
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+    <h1>Teams available</h1>
+    <table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Directory Link</th>
+	        <th>created date</th>
+	        <th>Add Members</th>
+	        <th>Edit Details</th>
+	        <th>Edit TimeLine</th>
+	        <th>View Members</th>
+	        <th>View Details</th>
+	        <th>View TimeLine</th>
+	    </tr>
+	    {% for team in teams %}
+	    <tr>
+	        <td>{{ team.teamName }}</td>
+	        <td>{{ team.directoryLink }}</td>
+	        <td>{{ team.created_date }}</td>
+	        <td><a class="btn btn-default" href="{% url 'addMembers' team=team.teamName %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'editTeam' team=team.teamName %}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'editTimeline' team=team.teamName %}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+	        <td><a class="btn btn-default" href="{% url 'viewMembers' team=team.teamName %}"><span class="lyphicon glyphicon-plus"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'viewTeam' team=team.teamName %}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+	        <td><a class="btn btn-default" href="{% url 'viewTimeline' team=team.teamName %}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+	    </tr>
+	    {% endfor %}
+	</table>
+    <p>Create a new team</p>
+    <a href="{% url 'newTeam' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span>new</a>
+</body>
+</html>

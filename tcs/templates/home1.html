@@ -1,0 +1,17 @@
+<html>
+    
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+    
+<body>
+    <p>hello</p>
+    <p>welcome {{ user.username }}</p>
+    <p><a href="/logout">Logout</a></p>
+    <p><a href="{% url 'team' %}">Team</a></p>    
+    <p><a href="{% url 'chat' %}">Chat</a></p>
+</body>
+    
+</html>

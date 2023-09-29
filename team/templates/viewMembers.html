@@ -1,0 +1,23 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+<h2>Members</h2>
+<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Role</th>  
+	    </tr>
+	{% for member in memberList %}
+		<tr> 
+	        <td>{{ member.userName }}</td>
+	        <td>{{ member.role }}</td>
+	    </tr>
+
+	{% endfor %}    
+
+</body>
+</html>

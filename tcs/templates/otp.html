@@ -1,0 +1,18 @@
+<html>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+	
+<head>
+    <title></title>
+</head>
+
+<body>
+	{% load crispy_forms_tags %}
+	{{ error }}
+    <form method="POST">
+        {% csrf_token %} {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</body>
+
+</html>

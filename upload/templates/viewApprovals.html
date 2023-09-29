@@ -1,0 +1,27 @@
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>div{margin: 25px;}</style>
+</head>
+<body>
+{% load crispy_forms_tags %}
+<table class="table table-hover">
+	    <tr>
+	        <th>Name</th>
+	        <th>Approved By</th>  
+	        <th>Approved At</th>  
+	        <th>Grade</th>
+	    </tr>
+	
+		{% for approval in approvals %}
+		<tr> 
+	        <td>{{ approval.file.name }}</td>
+	        <td>{{ approval.approvedBy }}</td>
+	        <td>{{ approval.approvedAt }}</td>
+	        <td>{{ approval.grade }}</td>
+	    </tr>
+
+	{% endfor %}  
+</body>
+</html>
